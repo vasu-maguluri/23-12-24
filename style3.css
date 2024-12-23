@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 100vh;
+background-color: black;
+}
+.grid-container{
+   width: 800px;
+   padding: 5px;
+   color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(73, 68, 68);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 0.7fr 1fr 1fr ;
+    grid-template-rows: 80px 200px 200px 100px ;
+
+}
+.item{
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.header{
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgb(136, 66, 189) 47%);
+grid-column: 1/4;
+grid-row: 1/2;
+}
+.content-1{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,47,121,1) 0%, rgba(0,212,255,1) 100%);
+grid-column: 2/4;
+}
+.content-2{
+    background: rgb(76, 69, 225);
+background: linear-gradient(90deg, rgb(6, 2, 74) 0%, rgba(9,47,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.content-3{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,47,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.sidebar{
+    background-color: rgb(44, 190, 190);
+    grid-row: 2/4;
+    grid-column: 1/2;
+}
+.footer{
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(134,25,217,1) 47%);
+grid-row: 4/5;
+grid-column:1/4 ;
+}
